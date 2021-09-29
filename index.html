@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>ATM</title>
+	<script src= "https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+	
+</head>
+
+<style>
+.pincode{
+	text-security: disc;
+	-webkit-text-security: disc;
+	-moz-text-security: disc;
+}
+</style>
+
+
+<body>
+
+<div ng-pin="">
+	<div style = "background-color:#7CD3C9; margin:auto; border:  2px outset black;  padding:  2px; height: 600px; width: 810px;">
+		<h1><center> Simple Automated Teller Machine </center></h1>
+
+	<label> Pin :</label>
+	<input type= "text" placeholder="enter your pin here" name ="pincode" class="pincode" inputmode = "numeric" pattern = "[0-9}{4}" maxlength ="4">
+
+	<input type= "submit" value = "Enter">
+
+	<br>
+
+
+<body ng-app="angular">
+	<br>
+	<div style = "margin:auto; border:  5px outset black;  padding:  2px; height: 300px; font-size: 20px;
+	width: 500px;">
+	<div ng-controller = "MainController">
+		<div ng-repeat = "item in list">
+			<li> {{ item }} </li>
+		</div>
+	</div>
+
+	<div ng-controller = "option">
+		<br>
+	<label>Choose the operation you want </label>
+	<input type= "text" placeholder="enter here" name ="number" maxlength="1">
+	<input type= "submit" value = "Enter">
+	</div>
+</body>
+</div>
+
+
+	<script src ="js/app.js"></script>
+	<script src = "js/MainController/MainController.js"></script>
+</body>
+</html>
